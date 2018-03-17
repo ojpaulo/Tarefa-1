@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Alarme</string>
+    <string name="action_settings">Configurações</string>
+    <string name="set_alarm">Registrar Alarme</string>
+    <string name="lblEvent">Evento: </string>
+    <string name="lblDate">Data: </string>
+    <string name="lblTime">Hora: </string>
+
+</resources>

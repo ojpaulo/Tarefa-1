@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="wpos.com.br.alarme.MainActivity">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp">
+
+
+        <TextView
+        android:id="@+id/lblEvent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/lblEvent"
+    android:paddingLeft="10dp"/>
+
+
+    <EditText
+        android:id="@+id/txtEvent"
+    android:inputType="text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"/>
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/lblDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="@string/lblDate" />
+
+            <DatePicker
+                android:id="@+id/datAlarm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="7dp">
+
+
+        <TextView
+            android:id="@+id/lblTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="@string/lblTime" />
+
+        <TimePicker
+            android:id="@+id/timAlarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="30dp"
+    android:gravity="center">
+
+    <Button
+    android:id="@+id/setAlarm"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="onClickSetAlarm"
+    android:text="@string/set_alarm"/>
+    </LinearLayout>
+
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>

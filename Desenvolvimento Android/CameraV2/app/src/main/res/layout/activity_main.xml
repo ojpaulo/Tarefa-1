@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="wpos.com.br.camerav2.MainActivity">
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="34dp"
+    android:layout_marginTop="36dp"
+    android:contentDescription="@string/hello_world"
+
+    />
+
+
+    <TextView
+        android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignRight="@+id/imageView"
+    android:text="@string/mensagem_do_clique"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    />
+
+</android.support.constraint.ConstraintLayout>
